@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/23da98e7f4.js" crossorigin="anonymous"></script>
+        <title>linked in</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+
+            }
+
+            body {
+                background-color: #F3F2EF;
+            }
+
+            header {
+                background-color: aliceblue;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            header i {
+                font-size: 20px;
+                display: block;
+            }
+
+
+            header ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+
+            }
+
+            ul li {
+                float: left;
+                padding-right: 20px;
+                color: rgba(0, 0, 0, 0.616);
+            }
+
+            ul li input {
+                border-radius: 20px;
+                padding: 5px 10px;
+            }
+
+            ul li a {
+                color: rgba(0, 0, 0, 0.514);
+                text-decoration: none;
+            }
+
+
+            ul li a:hover {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                border-bottom: 1px solid black;
+            }
+
+            ul li img {
+                border-radius: 50%;
+                height: 80px;
+            }
+
+            div:not(.container, .right, .center, .left) {
+                background-color: white;
+
+            }
+
+
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                height: 500px;
+
+                flex-wrap: wrap;
+                align-content: space-between;
+                margin: 0 40px;
+            }
+
+           
+
+
+            .left {
+                min-width: 120px;
+
+                width: 20%;
+                
+            }
+
+            .left .profile {
+                /* border: 2px solid rgba(0, 0, 0, 0.733); */
+                width: 100%;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+
+
+
+
+
+            }
+
+            .left .background {
+                background-color: rgba(247, 209, 160, 0.473);
+                width: 100%;
+                height: 56.25px;
+                background-size: cover;
+
+
+            }
+
+            .left .profile img {
+
+                border: 2px solid #eee;
+                height: 72px;
+                width: 72px;
+                border-radius: 50%;
+                margin: 0 auto;
+
+            }
+
+            .left .profile .intro {
+                position: relative;
+                top: -37px;
+                left: 0px;
+                text-align: center;
+                background-color: transparent;
+                background-position: top;
+                background-size: 50% 20px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+                padding-bottom: 12px;
+            }
+
+            .left .profile .view {
+                padding: 5px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+                padding-bottom: 12px;
+                display: grid;
+                grid-template-columns: 60% 40%;
+                grid-column-gap: 20px;
+                grid-row-gap: 15px;
+
+            }
+
+            .center {
+                min-width: 280px;
+
+                width: 50%;
+            }
+
+            .center .post {
+                display: flex;
+                flex-direction: column;
+
+                /* border: 2px solid black; */
+                border-radius: 5px;
+
+            }
+
+            .center .post img {
+                border: 2px solid #eee;
+                height: 48px;
+                width: 48px;
+                border-radius: 50%;
+
+            }
+
+            .center .post ul {
+                list-style-type: none;
+            }
+
+            .center .post input {
+                width: 80%;
+                border-radius: 20px;
+                height: 30px;
+                vertical-align: 20px;
+                padding: 6px;
+            }
+
+
+
+            .right {
+                min-width: 150px;
+
+                width: 24%;
+
+            }
+
+            .right .feedback {
+                /* border: 2px solid black; */
+                overflow: auto;
+                border-radius: 5px;
+
+
+            }
+
+            .right .feedback .feed {
+                margin: 5px;
+            }
+
+            .right .feedback img {
+                border: 2px solid #eee;
+                height: 48px;
+                width: 48px;
+               
+                border-radius: 50%;
+                float: left;
+            }
+
+            .right .feedback button {
+                border-radius: 20px;
+                padding: 5px 10px;
+
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-linkedin"
+                        style="margin-left:10px;font-size: 30px;color: rgb(24, 24, 126);"></i>
+
+
+                </li>
+                <li>
+
+                    <input type="search" name="search" id="">
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">home</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-group"></i>
+                    <a href="#">my network</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-suitcase"></i>
+                    <a href="#">jobs</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-message"></i>
+                    <a href="#">message</a>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-bell"></i>
+
+                    <a href="#">notification</a>
+
+                </li>
+
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="left">
+
+                <div class="profile">
+                    <div class="background"></div>
+                    <div class="intro">
+                        <img src="PM.jpeg" alt="">
+                        <h2>Ahmed moustaffa</h2>
+                        <p>fullstack</p>
+
+
+                    </div>
+                    <div class="view">
+                        <p>who view your profile</p>
+                        <p>300</p>
+                        <p> views your post</p>
+                        <p>344</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="center">
+                <div class="post">
+                    <div class="top">
+                        <img src="PM.jpeg" alt="">
+                        <input type="text" name="post" id="">
+                    </div>
+
+                    <div class="down">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-image" style="color: #B5D3F1;"></i>
+                                photo
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-youtube" style="color:#7FC15E"></i>
+                                video
+
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-calendar" style="color:#F0C687"></i>
+                                event
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-newspaper" style="color:#FC9295"></i>
+                                write article
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="feedback">
+                    <h3>add your feedback</h3>
+                    <div class="feed">
+                        <div class="img"> <img src="PM.jpeg" alt=""></div>
+
+                        <div class="data">
+                            <h4>khalid</h4>
+                            <p>HR in software company</p>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i> follow</button>
+                    </div>
+                    <div class="feed">
+                        <div class="img"> <img src="PM.jpeg" alt=""></div>
+
+                        <div class="data">
+                            <h4>khalid</h4>
+                            <p>HR in software company</p>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i> follow</button>
+                    </div>
+
+                    <div class="feed">
+                        <div class="img"> <img src="PM.jpeg" alt=""></div>
+
+                        <div class="data">
+                            <h4>khalid</h4>
+                            <p>HR in software company</p>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i> follow</button>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </body>
+
+</html>
